@@ -25,11 +25,11 @@ export class UserComponent implements OnInit {
     this.age=40;
     this.email='teddy@example.com';
     this.address ={
-      street:'Joseph broz street',
+      street:'Menelik II street',
       city: 'Addis Ababa',
-      state: 'Addis Ababa',
+      state: 'Ethiopia',
     }
-    this.hobbies=['write songs', 'listen to music', 'watch movies'];
+    this.hobbies=['Write songs', 'Listen to music', 'Watch movies'];
     
     this.dataService.getPosts().subscribe((posts) => {
       //console.log(posts);
@@ -38,8 +38,8 @@ export class UserComponent implements OnInit {
   }
 
   onClick(){
-    this.name='Workneh Tefera';
-    this.hobbies.push('New hobby');
+    this.name='Seyoum Tefera';
+    this.hobbies.push('walking');
   }
   addHobby(hobby){    
     this.hobbies.unshift(hobby);

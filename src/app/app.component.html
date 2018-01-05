@@ -1,5 +1,78 @@
-<ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about">About</a></li>
-</ul>
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <title>Angular 4 App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>  
+      <a class="navbar-brand" a routerLink="/">A4App</a>          
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">        
+      <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li>
+            <form class="form-inline my-2 my-lg-0" style="margin-top:7px" >
+                <input class="form-control mr-sm-2" type="text" placeholder="search..." aria-label="Search">                
+            </form>
+        </li>               
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container -->
+<div  class="container-fluid">
+     <router-outlet></router-outlet>
+</div>
+            
+<footer class="container-fluid text-center">   <hr />
+    <div class="col-sm-12">
+        <div class="col-sm-1">
+                        
+        </div>
+        <div class="col-sm-3">
+            <p><a class="link" href="#">Terms and Conditions</a></p>
+        </div>
+        <div class="col-sm-1">
+            <p>|</p>    
+        </div>
+        <div class="col-sm-3">
+            <p><a class="link" href="#">privacy Policy</a></p> 
+        </div>
+        <div class="col-sm-1">
+            <p>|</p>       
+        </div>
+        <div class="col-sm-3">
+             <p><a class="link" href="#">Contact Us</a></p>   
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-11">
+           <p class="text-bold">&copy; 2017 Work</p>      
+        </div>
+    </div>
+</footer>
+</body>
+</html>
